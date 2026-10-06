@@ -1,0 +1,538 @@
+{
+  "status": "tuned_and_validation_selected_not_new_holdout_tested",
+  "trained_through": "2026-03-31",
+  "signature": "33822972c99be804b85957723cc61605f4702af5b1b76813bfa3f0c21cf1a4c7",
+  "tuned_parameters": {
+    "SARIMA|occupancy|1": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|occupancy|1": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "RandomForest|occupancy|1": {
+      "n_estimators": 100,
+      "max_depth": 8,
+      "min_samples_leaf": 4,
+      "max_features": 1.0
+    },
+    "SARIMA|occupancy|4": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|occupancy|4": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|occupancy|12": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMA|occupancy|12": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "RandomForest|occupancy|12": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "RandomForest|occupancy|4": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "SARIMA|n_listings_open|1": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|n_listings_open|1": {
+      "order": [
+        2,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "RandomForest|n_searchers|1": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "RandomForest|n_listings_open|1": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "SARIMA|n_listings_open|4": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMA|n_searchers|1": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMA|n_searchers|4": {
+      "order": [
+        2,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|n_searchers|1": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|n_listings_open|4": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|n_searchers|4": {
+      "order": [
+        2,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|n_listings_open|12": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|n_searchers|12": {
+      "order": [
+        2,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMA|n_searchers|12": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMA|n_listings_open|12": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "RandomForest|n_listings_open|12": {
+      "n_estimators": 200,
+      "max_depth": null,
+      "min_samples_leaf": 8,
+      "max_features": 1.0
+    },
+    "RandomForest|n_searchers|12": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "RandomForest|n_listings_open|4": {
+      "n_estimators": 200,
+      "max_depth": null,
+      "min_samples_leaf": 8,
+      "max_features": 1.0
+    },
+    "RandomForest|n_searchers|4": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "RandomForest|median_asking_rent|1": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "RandomForest|median_asking_rent|4": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "SARIMAX|median_asking_rent|4": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMA|median_asking_rent|4": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMA|median_asking_rent|1": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|median_asking_rent|1": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "RandomForest|median_asking_rent|12": {
+      "n_estimators": 200,
+      "max_depth": null,
+      "min_samples_leaf": 8,
+      "max_features": 1.0
+    },
+    "SARIMA|median_asking_rent|12": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|median_asking_rent|12": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    }
+  },
+  "winners": [
+    {
+      "target": "median_asking_rent",
+      "horizon_weeks": 1,
+      "method": "Naive",
+      "split": "Validation",
+      "n_predictions": 156,
+      "mae_raw": 123.07692307692308,
+      "rmse_raw": 196.0262279677953,
+      "MAE": 123.07692307692308,
+      "RMSE": 196.0262279677953,
+      "unit": "baht/month"
+    },
+    {
+      "target": "median_asking_rent",
+      "horizon_weeks": 4,
+      "method": "RandomForest",
+      "split": "Validation",
+      "n_predictions": 148,
+      "mae_raw": 262.07886010585383,
+      "rmse_raw": 321.6434804797477,
+      "MAE": 262.07886010585383,
+      "RMSE": 321.6434804797477,
+      "unit": "baht/month"
+    },
+    {
+      "target": "median_asking_rent",
+      "horizon_weeks": 12,
+      "method": "RandomForest",
+      "split": "Validation",
+      "n_predictions": 68,
+      "mae_raw": 253.03827595982597,
+      "rmse_raw": 320.7927305981048,
+      "MAE": 253.03827595982597,
+      "RMSE": 320.7927305981048,
+      "unit": "baht/month"
+    },
+    {
+      "target": "n_listings_open",
+      "horizon_weeks": 1,
+      "method": "SARIMA",
+      "split": "Validation",
+      "n_predictions": 156,
+      "mae_raw": 3.9876240492105923,
+      "rmse_raw": 5.26909396790541,
+      "MAE": 3.9876240492105923,
+      "RMSE": 5.26909396790541,
+      "unit": "count"
+    },
+    {
+      "target": "n_listings_open",
+      "horizon_weeks": 4,
+      "method": "SARIMA",
+      "split": "Validation",
+      "n_predictions": 148,
+      "mae_raw": 8.535377555552731,
+      "rmse_raw": 10.800765695028982,
+      "MAE": 8.535377555552731,
+      "RMSE": 10.800765695028982,
+      "unit": "count"
+    },
+    {
+      "target": "n_listings_open",
+      "horizon_weeks": 12,
+      "method": "SeasonalNaive",
+      "split": "Validation",
+      "n_predictions": 68,
+      "mae_raw": 12.691176470588236,
+      "rmse_raw": 16.622539623337097,
+      "MAE": 12.691176470588236,
+      "RMSE": 16.622539623337097,
+      "unit": "count"
+    },
+    {
+      "target": "n_searchers",
+      "horizon_weeks": 1,
+      "method": "SARIMA",
+      "split": "Validation",
+      "n_predictions": 156,
+      "mae_raw": 4.408410686837412,
+      "rmse_raw": 6.052639666217073,
+      "MAE": 4.408410686837412,
+      "RMSE": 6.052639666217073,
+      "unit": "count"
+    },
+    {
+      "target": "n_searchers",
+      "horizon_weeks": 4,
+      "method": "RandomForest",
+      "split": "Validation",
+      "n_predictions": 148,
+      "mae_raw": 3.565711594031925,
+      "rmse_raw": 4.685477421134548,
+      "MAE": 3.565711594031925,
+      "RMSE": 4.685477421134548,
+      "unit": "count"
+    },
+    {
+      "target": "n_searchers",
+      "horizon_weeks": 12,
+      "method": "SARIMA",
+      "split": "Validation",
+      "n_predictions": 68,
+      "mae_raw": 3.529411762100544,
+      "rmse_raw": 4.68727940411743,
+      "MAE": 3.529411762100544,
+      "RMSE": 4.68727940411743,
+      "unit": "count"
+    },
+    {
+      "target": "occupancy",
+      "horizon_weeks": 1,
+      "method": "SARIMA",
+      "split": "Validation",
+      "n_predictions": 156,
+      "mae_raw": 0.004919856132320359,
+      "rmse_raw": 0.0063389939773016895,
+      "MAE": 0.4919856132320359,
+      "RMSE": 0.6338993977301689,
+      "unit": "percentage points"
+    },
+    {
+      "target": "occupancy",
+      "horizon_weeks": 4,
+      "method": "SARIMAX",
+      "split": "Validation",
+      "n_predictions": 148,
+      "mae_raw": 0.009809220452237833,
+      "rmse_raw": 0.012673257911884098,
+      "MAE": 0.9809220452237832,
+      "RMSE": 1.2673257911884097,
+      "unit": "percentage points"
+    },
+    {
+      "target": "occupancy",
+      "horizon_weeks": 12,
+      "method": "SARIMAX",
+      "split": "Validation",
+      "n_predictions": 68,
+      "mae_raw": 0.013009423137346455,
+      "rmse_raw": 0.016638935974031484,
+      "MAE": 1.3009423137346454,
+      "RMSE": 1.6638935974031484,
+      "unit": "percentage points"
+    }
+  ],
+  "test_reopened": false
+}

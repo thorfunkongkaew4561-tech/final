@@ -1,0 +1,4 @@
+﻿split,rows,projects,first_date,last_date
+Train,1838,18,2023-01-03,2025-12-30
+Validation,234,18,2026-01-06,2026-03-31
+Test,216,18,2026-04-07,2026-06-23

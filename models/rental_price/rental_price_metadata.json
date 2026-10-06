@@ -1,0 +1,172 @@
+{
+  "winner_model": "Random Forest",
+  "model_selection_metric": "official_validation_mae",
+  "tuning_metric": "mean_rolling_validation_mae",
+  "tuning_method": "4 expanding quarterly time folds",
+  "rolling_folds": [
+    {
+      "name": "2025_Q1",
+      "train_end": "2024-12-31",
+      "validation_end": "2025-03-31",
+      "train_rows": 23898,
+      "validation_rows": 2546
+    },
+    {
+      "name": "2025_Q2",
+      "train_end": "2025-03-31",
+      "validation_end": "2025-06-30",
+      "train_rows": 26444,
+      "validation_rows": 6614
+    },
+    {
+      "name": "2025_Q3",
+      "train_end": "2025-06-30",
+      "validation_end": "2025-09-30",
+      "train_rows": 33058,
+      "validation_rows": 3001
+    },
+    {
+      "name": "2025_Q4",
+      "train_end": "2025-09-30",
+      "validation_end": "2025-12-31",
+      "train_rows": 36059,
+      "validation_rows": 4521
+    }
+  ],
+  "all_features": [
+    "floor",
+    "size_sqm",
+    "room_type",
+    "view",
+    "furnished",
+    "lease_months",
+    "is_renewal",
+    "project_name",
+    "university",
+    "distance_to_campus_m",
+    "facility_count",
+    "start_year",
+    "start_month"
+  ],
+  "stepwise_selected_features": [
+    "room_type",
+    "project_name",
+    "start_month",
+    "view",
+    "is_renewal",
+    "furnished",
+    "floor"
+  ],
+  "gradient_boosting_params": {
+    "n_estimators": 350,
+    "learning_rate": 0.03,
+    "max_depth": 4,
+    "min_samples_leaf": 15,
+    "subsample": 0.9
+  },
+  "random_forest_params": {
+    "n_estimators": 400,
+    "max_depth": 20,
+    "min_samples_split": 5,
+    "min_samples_leaf": 4,
+    "max_features": 0.7
+  },
+  "knn_params": {
+    "n_neighbors": 10,
+    "weights": "distance",
+    "p": 1
+  },
+  "ann_params": {
+    "hidden_layer_sizes": [
+      64
+    ],
+    "activation": "relu",
+    "alpha": 0.0001,
+    "learning_rate_init": 0.001
+  },
+  "metrics": [
+    {
+      "model": "Stepwise MLR",
+      "split": "validation",
+      "mae": 770.8383856304724,
+      "rmse": 1051.459787248719,
+      "r2": 0.7185966352153489
+    },
+    {
+      "model": "Gradient Boosting",
+      "split": "validation",
+      "mae": 759.5984403132247,
+      "rmse": 1021.2451668979006,
+      "r2": 0.7345370118076548
+    },
+    {
+      "model": "Random Forest",
+      "split": "validation",
+      "mae": 713.9242650740302,
+      "rmse": 955.9445930801047,
+      "r2": 0.7674001702309211
+    },
+    {
+      "model": "KNN",
+      "split": "validation",
+      "mae": 808.0710006230269,
+      "rmse": 1111.7810027609366,
+      "r2": 0.6853828098436795
+    },
+    {
+      "model": "ANN",
+      "split": "validation",
+      "mae": 870.1053471699295,
+      "rmse": 1143.0526082036422,
+      "r2": 0.6674351170141345
+    },
+    {
+      "model": "Stepwise MLR",
+      "split": "test",
+      "mae": 1113.7160110311668,
+      "rmse": 1395.8010492185929,
+      "r2": 0.5853514631329084
+    },
+    {
+      "model": "Gradient Boosting",
+      "split": "test",
+      "mae": 1032.3653169627814,
+      "rmse": 1314.115292638285,
+      "r2": 0.6324638726289238
+    },
+    {
+      "model": "Random Forest",
+      "split": "test",
+      "mae": 1020.7269546354617,
+      "rmse": 1330.6564469220439,
+      "r2": 0.6231530703447585
+    },
+    {
+      "model": "KNN",
+      "split": "test",
+      "mae": 1117.417647519012,
+      "rmse": 1439.1156922346065,
+      "r2": 0.5592173272740929
+    },
+    {
+      "model": "ANN",
+      "split": "test",
+      "mae": 1069.9580041045788,
+      "rmse": 1356.022470498827,
+      "r2": 0.6086486206695996
+    }
+  ],
+  "prediction_error_reference": {
+    "source_split": "official_validation",
+    "absolute_error_quantiles_baht": {
+      "p50": 545.9909891962643,
+      "p75": 990.2262000542,
+      "p90": 1533.9333320213018
+    },
+    "reference_quantile": "p75",
+    "reference_coverage_target": 0.75,
+    "error_margin_baht": 990.2262000542,
+    "test_coverage": 0.5880247763248452,
+    "description": "ช่วงความคลาดเคลื่อนอ้างอิงจาก Absolute Error บน Validation และตรวจ Coverage บน Test"
+  }
+}

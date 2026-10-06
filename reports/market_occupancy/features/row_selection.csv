@@ -1,0 +1,13 @@
+﻿target,horizon_weeks,total_origins,invalid_or_short_history,outside_period_after_history,missing_target_inside_period,kept_rows
+occupancy,1,2288,216,0,18,2054
+n_searchers,1,2288,216,0,18,2054
+n_listings_open,1,2288,216,0,18,2054
+median_asking_rent,1,2288,216,0,21,2051
+occupancy,4,2288,216,54,18,2000
+n_searchers,4,2288,216,54,18,2000
+n_listings_open,4,2288,216,54,18,2000
+median_asking_rent,4,2288,216,54,21,1997
+occupancy,12,2288,216,198,18,1856
+n_searchers,12,2288,216,198,18,1856
+n_listings_open,12,2288,216,198,18,1856
+median_asking_rent,12,2288,216,198,21,1853

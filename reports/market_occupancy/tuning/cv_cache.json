@@ -1,0 +1,5 @@
+{
+  "signature": "370422cdcbdb29fabf985cdefe323789a47af23604c8dda6ee8efd354fcd4a1b",
+  "previous_signature": "d8f94f7c9a643cb6d7c6d6c3318b764afd2a00dbb75a4859e8874396306371a6",
+  "verified_reuse_reason": "Added Validation-origin eligibility after final CV target date; all prior functions, CV grids and input-data signature verified unchanged by AST and old cache signature."
+}

@@ -1,0 +1,37 @@
+﻿method,target,horizon_weeks,candidate_id,parameters,CV_MAE
+SARIMA,occupancy,1,0,"{""order"": [1, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",0.47429767026265884
+SARIMAX,occupancy,1,0,"{""order"": [1, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",0.5072431089349947
+RandomForest,occupancy,1,0,"{""n_estimators"": 100, ""max_depth"": 8, ""min_samples_leaf"": 4, ""max_features"": 1.0}",0.5899218577214649
+SARIMA,occupancy,4,0,"{""order"": [1, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",0.7817385600433053
+SARIMAX,occupancy,4,0,"{""order"": [1, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",0.8754321943210137
+SARIMAX,occupancy,12,2,"{""order"": [1, 0, 1], ""seasonal_order"": [0, 1, 0, 52]}",0.9480417392983168
+SARIMA,occupancy,12,2,"{""order"": [1, 0, 1], ""seasonal_order"": [0, 1, 0, 52]}",1.0697370481357886
+RandomForest,occupancy,12,1,"{""n_estimators"": 200, ""max_depth"": 12, ""min_samples_leaf"": 2, ""max_features"": 0.7}",1.0952003231043048
+RandomForest,occupancy,4,1,"{""n_estimators"": 200, ""max_depth"": 12, ""min_samples_leaf"": 2, ""max_features"": 0.7}",1.860268447901103
+SARIMA,n_listings_open,1,0,"{""order"": [1, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",4.503256333768897
+SARIMAX,n_listings_open,1,1,"{""order"": [2, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",4.773570849531988
+RandomForest,n_searchers,1,1,"{""n_estimators"": 200, ""max_depth"": 12, ""min_samples_leaf"": 2, ""max_features"": 0.7}",6.1982017259329965
+RandomForest,n_listings_open,1,1,"{""n_estimators"": 200, ""max_depth"": 12, ""min_samples_leaf"": 2, ""max_features"": 0.7}",6.494090621982514
+SARIMA,n_listings_open,4,0,"{""order"": [1, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",7.27232664500675
+SARIMA,n_searchers,1,2,"{""order"": [1, 0, 1], ""seasonal_order"": [0, 1, 0, 52]}",7.4860487981619235
+SARIMA,n_searchers,4,1,"{""order"": [2, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",7.745338441973882
+SARIMAX,n_searchers,1,0,"{""order"": [1, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",8.046868363207054
+SARIMAX,n_listings_open,4,0,"{""order"": [1, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",8.288174585102823
+SARIMAX,n_searchers,4,1,"{""order"": [2, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",8.955407521366787
+SARIMAX,n_listings_open,12,2,"{""order"": [1, 0, 1], ""seasonal_order"": [0, 1, 0, 52]}",9.17307744964828
+SARIMAX,n_searchers,12,1,"{""order"": [2, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",9.228330132143311
+SARIMA,n_searchers,12,0,"{""order"": [1, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",9.312500002040325
+SARIMA,n_listings_open,12,2,"{""order"": [1, 0, 1], ""seasonal_order"": [0, 1, 0, 52]}",10.284897589215714
+RandomForest,n_listings_open,12,2,"{""n_estimators"": 200, ""max_depth"": null, ""min_samples_leaf"": 8, ""max_features"": 1.0}",10.8961980510082
+RandomForest,n_searchers,12,1,"{""n_estimators"": 200, ""max_depth"": 12, ""min_samples_leaf"": 2, ""max_features"": 0.7}",11.88847672484715
+RandomForest,n_listings_open,4,2,"{""n_estimators"": 200, ""max_depth"": null, ""min_samples_leaf"": 8, ""max_features"": 1.0}",14.326280115070967
+RandomForest,n_searchers,4,1,"{""n_estimators"": 200, ""max_depth"": 12, ""min_samples_leaf"": 2, ""max_features"": 0.7}",17.151314865712553
+RandomForest,median_asking_rent,1,1,"{""n_estimators"": 200, ""max_depth"": 12, ""min_samples_leaf"": 2, ""max_features"": 0.7}",319.20707577479527
+RandomForest,median_asking_rent,4,1,"{""n_estimators"": 200, ""max_depth"": 12, ""min_samples_leaf"": 2, ""max_features"": 0.7}",416.80271410208036
+SARIMAX,median_asking_rent,4,2,"{""order"": [1, 0, 1], ""seasonal_order"": [0, 1, 0, 52]}",459.52350859994357
+SARIMA,median_asking_rent,4,2,"{""order"": [1, 0, 1], ""seasonal_order"": [0, 1, 0, 52]}",482.5085889103489
+SARIMA,median_asking_rent,1,2,"{""order"": [1, 0, 1], ""seasonal_order"": [0, 1, 0, 52]}",571.8161215414141
+SARIMAX,median_asking_rent,1,0,"{""order"": [1, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",575.4817650214707
+RandomForest,median_asking_rent,12,2,"{""n_estimators"": 200, ""max_depth"": null, ""min_samples_leaf"": 8, ""max_features"": 1.0}",627.6925534219386
+SARIMA,median_asking_rent,12,0,"{""order"": [1, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",819.2271061932584
+SARIMAX,median_asking_rent,12,0,"{""order"": [1, 0, 0], ""seasonal_order"": [0, 1, 0, 52]}",833.4376431433914

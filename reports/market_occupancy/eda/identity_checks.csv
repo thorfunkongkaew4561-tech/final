@@ -1,0 +1,4 @@
+﻿check,failures
+occupancy ไม่ตรงกับ n_units_leased / total_units,0
+n_units_leased + n_listings_open ไม่เท่ากับ total_units,0
+จำนวนห้องใน units ไม่ตรง total_units,0

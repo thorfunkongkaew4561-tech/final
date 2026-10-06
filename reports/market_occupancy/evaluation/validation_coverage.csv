@@ -1,0 +1,13 @@
+﻿target,horizon_weeks,attempted_cases,common_cases,coverage
+median_asking_rent,1,156,156,1.0
+median_asking_rent,4,148,148,1.0
+median_asking_rent,12,116,116,1.0
+n_listings_open,1,156,156,1.0
+n_listings_open,4,148,148,1.0
+n_listings_open,12,116,116,1.0
+n_searchers,1,156,156,1.0
+n_searchers,4,148,148,1.0
+n_searchers,12,116,116,1.0
+occupancy,1,156,156,1.0
+occupancy,4,148,148,1.0
+occupancy,12,116,116,1.0

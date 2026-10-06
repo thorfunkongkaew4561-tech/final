@@ -1,0 +1,397 @@
+{
+  "chosen_from": "TrainCV only",
+  "cv_origins": [
+    "2024-12-31",
+    "2025-04-01",
+    "2025-07-01",
+    "2025-09-02"
+  ],
+  "parameters": {
+    "SARIMA|occupancy|1": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|occupancy|1": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "RandomForest|occupancy|1": {
+      "n_estimators": 100,
+      "max_depth": 8,
+      "min_samples_leaf": 4,
+      "max_features": 1.0
+    },
+    "SARIMA|occupancy|4": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|occupancy|4": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|occupancy|12": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMA|occupancy|12": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "RandomForest|occupancy|12": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "RandomForest|occupancy|4": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "SARIMA|n_listings_open|1": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|n_listings_open|1": {
+      "order": [
+        2,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "RandomForest|n_searchers|1": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "RandomForest|n_listings_open|1": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "SARIMA|n_listings_open|4": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMA|n_searchers|1": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMA|n_searchers|4": {
+      "order": [
+        2,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|n_searchers|1": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|n_listings_open|4": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|n_searchers|4": {
+      "order": [
+        2,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|n_listings_open|12": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|n_searchers|12": {
+      "order": [
+        2,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMA|n_searchers|12": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMA|n_listings_open|12": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "RandomForest|n_listings_open|12": {
+      "n_estimators": 200,
+      "max_depth": null,
+      "min_samples_leaf": 8,
+      "max_features": 1.0
+    },
+    "RandomForest|n_searchers|12": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "RandomForest|n_listings_open|4": {
+      "n_estimators": 200,
+      "max_depth": null,
+      "min_samples_leaf": 8,
+      "max_features": 1.0
+    },
+    "RandomForest|n_searchers|4": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "RandomForest|median_asking_rent|1": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "RandomForest|median_asking_rent|4": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.7
+    },
+    "SARIMAX|median_asking_rent|4": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMA|median_asking_rent|4": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMA|median_asking_rent|1": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|median_asking_rent|1": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "RandomForest|median_asking_rent|12": {
+      "n_estimators": 200,
+      "max_depth": null,
+      "min_samples_leaf": 8,
+      "max_features": 1.0
+    },
+    "SARIMA|median_asking_rent|12": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    },
+    "SARIMAX|median_asking_rent|12": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        52
+      ]
+    }
+  },
+  "seasonal_period_and_differencing_fixed": true,
+  "test_used_for_tuning": false
+}

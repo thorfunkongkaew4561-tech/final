@@ -1,0 +1,46 @@
+random_seed: 42
+
+time_split:
+  train_end: "2025-12-31"
+  validation_end: "2026-03-31"
+
+models:
+  rental_price:
+    target: rent
+    task: regression
+    candidates:
+      - stepwise_multiple_linear_regression
+      - gradient_boosting_regressor
+      - random_forest_regressor
+      - knn_regressor
+      - artificial_neural_network
+    selection_metric: validation_mae
+
+forecasting:
+  frequency: weekly
+  test_end: "2026-06-30"
+  candidates: [sarima, sarimax, random_forest_regressor]
+  baselines: [naive, seasonal_naive]
+  seasonal_period_weeks: 52
+  minimum_seasonal_trial_points: 104
+  group_column: project_id
+  date_column: date
+  horizons_weeks: [1, 4, 12]
+  occupancy_path_weeks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  targets: [n_searchers, n_listings_open, median_asking_rent, occupancy]
+  split_on: target_date
+  validation_method: rolling_origin
+  selection_metric: validation_mae_by_target_and_horizon
+  status: tuned_validation_selected_not_new_holdout_tested
+  experiment_parameters_source: src/kaverentai/models/market_occupancy_forecasting.py:SETTINGS
+  tuning_parameters_source: src/kaverentai/models/tune_market_occupancy.py:GRIDS
+  tuning_cv_origins: ["2024-12-31", "2025-04-01", "2025-07-01", "2025-09-02"]
+  tuned_validation_origin_not_before: "2025-11-25"
+  tuned_model_path: models/market_occupancy/tuned/selected_models.joblib
+  test_origin_not_before: "2026-03-31"
+
+integration:
+  market_occupancy_model:
+    owner: teammate
+    artifact_path: models/integration/market_occupancy_model.joblib
+    metadata_path: models/integration/market_occupancy_metadata.json

@@ -1,0 +1,30 @@
+{
+  "reason": "Added Validation-origin eligibility after final CV target date; all prior functions, CV grids and input-data signature verified unchanged by AST and old cache signature.",
+  "old_source_sha256": "3b7fef77b76ab6c0a3508d361c6ec362af12a8ab24df62981a274c62f6b44627",
+  "new_source_sha256": "98cab5fea57ef13f0cf1532cf90574baab488d571cbacda309ae20dadc2ffe41",
+  "unchanged_code_parts": [
+    "assign:Name(id='ROOT', ctx=Store())",
+    "assign:Name(id='CV_ORIGINS', ctx=Store())",
+    "assign:Name(id='TS_PARAMETER_SETS', ctx=Store())",
+    "assign:Name(id='RF_PARAMETER_SETS', ctx=Store())",
+    "assign:Name(id='GRIDS', ctx=Store())",
+    "parameter_key",
+    "training_cv_cases",
+    "choose_parameters",
+    "before_after_comparison",
+    "TunedForecastExperiment.__init__",
+    "TunedForecastExperiment.parameters_for",
+    "TunedForecastExperiment.fit_rf",
+    "TunedForecastExperiment.fit_time_series",
+    "TunedForecastExperiment.tune_on_train",
+    "TunedForecastExperiment.run_or_load",
+    "TunedForecastExperiment.save_selected_models",
+    "main"
+  ],
+  "new_methods": [
+    "TunedForecastExperiment.eligible_cases",
+    "TunedForecastExperiment.parameter_selection_date"
+  ],
+  "cv_predictions_recomputed": false,
+  "validation_predictions_require_recompute": true
+}

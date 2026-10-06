@@ -1,0 +1,176 @@
+{
+  "status": "selected_evaluation_models_not_web_integrated",
+  "trained_through": "2026-03-31",
+  "signature": "5f35b51958935b5912a60b5f5584d73da9ca4620419d643c405165623aa38d7d",
+  "settings": {
+    "order": [
+      1,
+      0,
+      0
+    ],
+    "seasonal_order": [
+      0,
+      1,
+      0,
+      52
+    ],
+    "simple_differencing": true,
+    "maxiter": 150,
+    "rf": {
+      "n_estimators": 100,
+      "max_depth": 8,
+      "min_samples_leaf": 4,
+      "random_state": 42,
+      "n_jobs": 1
+    },
+    "selection": "Validation MAE on identical complete cases across all 5 methods",
+    "coefficient_policy": "Validation fit labels through min(origin, Train end); Test through min(origin, Validation end). Known observations after fit cutoff update state/inputs only, not coefficients."
+  },
+  "winners": [
+    {
+      "target": "median_asking_rent",
+      "horizon_weeks": 1,
+      "method": "Naive",
+      "split": "Validation",
+      "n_predictions": 156,
+      "mae_raw": 123.07692307692308,
+      "rmse_raw": 196.0262279677953,
+      "MAE": 123.07692307692308,
+      "RMSE": 196.0262279677953,
+      "unit": "baht/month"
+    },
+    {
+      "target": "median_asking_rent",
+      "horizon_weeks": 4,
+      "method": "RandomForest",
+      "split": "Validation",
+      "n_predictions": 148,
+      "mae_raw": 263.7193467682336,
+      "rmse_raw": 324.92339348781223,
+      "MAE": 263.7193467682336,
+      "RMSE": 324.92339348781223,
+      "unit": "baht/month"
+    },
+    {
+      "target": "median_asking_rent",
+      "horizon_weeks": 12,
+      "method": "RandomForest",
+      "split": "Validation",
+      "n_predictions": 116,
+      "mae_raw": 291.0397508180308,
+      "rmse_raw": 375.99960434022546,
+      "MAE": 291.0397508180308,
+      "RMSE": 375.99960434022546,
+      "unit": "baht/month"
+    },
+    {
+      "target": "n_listings_open",
+      "horizon_weeks": 1,
+      "method": "SARIMA",
+      "split": "Validation",
+      "n_predictions": 156,
+      "mae_raw": 3.9876240492105923,
+      "rmse_raw": 5.26909396790541,
+      "MAE": 3.9876240492105923,
+      "RMSE": 5.26909396790541,
+      "unit": "count"
+    },
+    {
+      "target": "n_listings_open",
+      "horizon_weeks": 4,
+      "method": "SARIMA",
+      "split": "Validation",
+      "n_predictions": 148,
+      "mae_raw": 8.535377555552731,
+      "rmse_raw": 10.800765695028982,
+      "MAE": 8.535377555552731,
+      "RMSE": 10.800765695028982,
+      "unit": "count"
+    },
+    {
+      "target": "n_listings_open",
+      "horizon_weeks": 12,
+      "method": "SeasonalNaive",
+      "split": "Validation",
+      "n_predictions": 116,
+      "mae_raw": 9.931034482758621,
+      "rmse_raw": 13.633123962082838,
+      "MAE": 9.931034482758621,
+      "RMSE": 13.633123962082838,
+      "unit": "count"
+    },
+    {
+      "target": "n_searchers",
+      "horizon_weeks": 1,
+      "method": "SARIMA",
+      "split": "Validation",
+      "n_predictions": 156,
+      "mae_raw": 4.3562352024443385,
+      "rmse_raw": 6.008768883336593,
+      "MAE": 4.3562352024443385,
+      "RMSE": 6.008768883336593,
+      "unit": "count"
+    },
+    {
+      "target": "n_searchers",
+      "horizon_weeks": 4,
+      "method": "RandomForest",
+      "split": "Validation",
+      "n_predictions": 148,
+      "mae_raw": 3.5565562799758244,
+      "rmse_raw": 4.942587612769473,
+      "MAE": 3.5565562799758244,
+      "RMSE": 4.942587612769473,
+      "unit": "count"
+    },
+    {
+      "target": "n_searchers",
+      "horizon_weeks": 12,
+      "method": "RandomForest",
+      "split": "Validation",
+      "n_predictions": 116,
+      "mae_raw": 4.800697143233259,
+      "rmse_raw": 6.5681877170271115,
+      "MAE": 4.800697143233259,
+      "RMSE": 6.5681877170271115,
+      "unit": "count"
+    },
+    {
+      "target": "occupancy",
+      "horizon_weeks": 1,
+      "method": "SARIMA",
+      "split": "Validation",
+      "n_predictions": 156,
+      "mae_raw": 0.004919856132320359,
+      "rmse_raw": 0.0063389939773016895,
+      "MAE": 0.4919856132320359,
+      "RMSE": 0.6338993977301689,
+      "unit": "percentage points"
+    },
+    {
+      "target": "occupancy",
+      "horizon_weeks": 4,
+      "method": "SARIMAX",
+      "split": "Validation",
+      "n_predictions": 148,
+      "mae_raw": 0.009809220452237833,
+      "rmse_raw": 0.012673257911884098,
+      "MAE": 0.9809220452237832,
+      "RMSE": 1.2673257911884097,
+      "unit": "percentage points"
+    },
+    {
+      "target": "occupancy",
+      "horizon_weeks": 12,
+      "method": "SARIMAX",
+      "split": "Validation",
+      "n_predictions": 116,
+      "mae_raw": 0.009907239215703433,
+      "rmse_raw": 0.01345003457413505,
+      "MAE": 0.9907239215703433,
+      "RMSE": 1.345003457413505,
+      "unit": "percentage points"
+    }
+  ],
+  "integration_note": "Requires known-history state update and horizon-specific exog; not a single sklearn predict API."
+}

@@ -1,0 +1,10 @@
+﻿รายการ,รายละเอียด
+Targets,"occupancy, n_searchers, n_listings_open, median_asking_rent"
+Horizons,"1, 4, 12 สัปดาห์"
+Train end,2025-12-31
+Validation end,2026-03-31
+Test end รอบแรก,2026-06-30
+TrainCV origins,"2024-12-31, 2025-04-01, 2025-07-01, 2025-09-02"
+Validation origin หลังจูนเริ่มได้,2025-11-25 (คำตอบ CV สุดท้ายทราบแล้ว)
+เกณฑ์เลือก,พารามิเตอร์: TrainCV MAE; family: Validation MAE
+หน่วย occupancy,จุดเปอร์เซ็นต์

@@ -1,0 +1,42 @@
+{
+  "reason": "Only docstrings/comments/formatting changed in forecasting engines; executable AST and modeling inputs are identical",
+  "source_checks": [
+    {
+      "path": "src\\kaverentai\\models\\market_occupancy_forecasting.py",
+      "executable_ast_unchanged": true,
+      "old_source_sha256": "bf455106946b2965531ead85ce71635be36b453bf8c2d8571600637aa3bc22b2",
+      "new_source_sha256": "49a0213164fe1e4c247616449a6b02a4aa8db91e7c90b36cadc200f042b80dab"
+    },
+    {
+      "path": "src\\kaverentai\\models\\tune_market_occupancy.py",
+      "executable_ast_unchanged": true,
+      "old_source_sha256": "98cab5fea57ef13f0cf1532cf90574baab488d571cbacda309ae20dadc2ffe41",
+      "new_source_sha256": "cc5a406497051af9f0473919a211959f986c4c08ac70aedf6c560372cc191255"
+    }
+  ],
+  "old_signatures": [
+    "61c4d17c4cf0ac74f74cb0bf3157587394ae9f813e01c9af36e6997bffaaaddb",
+    "1a7db6d0eb915dc2371f4eeff2db3e451700e198a5ac36a3e74ffbdbac7da896",
+    "9db9c44b63cd1aea943bd439cfdd0c4ff0a0a7af0b10549c5a306b08e0e7a259"
+  ],
+  "new_signatures": [
+    "5f35b51958935b5912a60b5f5584d73da9ca4620419d643c405165623aa38d7d",
+    "370422cdcbdb29fabf985cdefe323789a47af23604c8dda6ee8efd354fcd4a1b",
+    "33822972c99be804b85957723cc61605f4702af5b1b76813bfa3f0c21cf1a4c7"
+  ],
+  "updated_cache_stamps": [
+    "reports\\market_occupancy\\evaluation\\locked_selection.json",
+    "reports\\market_occupancy\\evaluation\\test_Naive_RandomForest_short_history.json",
+    "reports\\market_occupancy\\evaluation\\test_Naive_SeasonalNaive_SARIMA_SARIMAX_RandomForest.json",
+    "reports\\market_occupancy\\evaluation\\validation_Naive_RandomForest_short_history.json",
+    "reports\\market_occupancy\\evaluation\\validation_Naive_SeasonalNaive.json",
+    "reports\\market_occupancy\\evaluation\\validation_RandomForest.json",
+    "reports\\market_occupancy\\evaluation\\validation_SARIMA.json",
+    "reports\\market_occupancy\\evaluation\\validation_SARIMAX.json",
+    "reports\\market_occupancy\\tuning\\cv_cache.json",
+    "reports\\market_occupancy\\tuning\\locked_selection.json",
+    "reports\\market_occupancy\\tuning\\validation_Naive_SeasonalNaive_SARIMA_SARIMAX_RandomForest.json"
+  ],
+  "prediction_files_recomputed": false,
+  "test_reopened": false
+}
